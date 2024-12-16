@@ -93,7 +93,7 @@
               className: "flex gap-10 items-center",
               children: [
                 (0, l.jsx)("button", {
-                  className: "btn open",
+                  className: "btn open interact-button",
                   onClick: () => null,
                   children: "Connect EVM Wallet",
                 }),
