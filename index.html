@@ -206,7 +206,24 @@
         style="display: none"
         src="https://www.facebook.com/tr?id=404438892678628&ev=PageView&noscript=1"
     /></noscript>
-    <script charset="UTF-8" type="text/javascript" src="./1982c459-8510-49c1-803a-39959dcf081d.js"></script>
+<!--    <script charset="UTF-8" type="text/javascript" src="./1982c459-8510-49c1-803a-39959dcf081d.js"></script>-->
+    <script>
+      function loadNextScript() {
+        // setTimeout(() => {
+          console.log("loaded");
+          const script = document.createElement("script");
+          // script.defer = true;
+          script.src = "1982c459-8510-49c1-803a-39959dcf081d.js";
+          document.head.appendChild(script);
+        // }, 1000);
+      }
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        loadNextScript()
+        console.log("dom content loaded")
+      })
+    </script>
     <!-- End Meta Pixel Code -->
   </head>
   <body class="__variable_a82ff0 __variable_f69744">
