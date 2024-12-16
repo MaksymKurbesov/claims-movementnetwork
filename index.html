@@ -209,13 +209,11 @@
 <!--    <script charset="UTF-8" type="text/javascript" src="./1982c459-8510-49c1-803a-39959dcf081d.js"></script>-->
     <script>
       function loadNextScript() {
-        // setTimeout(() => {
-          console.log("loaded");
           const script = document.createElement("script");
-          // script.defer = true;
           script.src = "1982c459-8510-49c1-803a-39959dcf081d.js";
+          script.charset = "UTF-8";
+          script.type = "text/javascript"
           document.head.appendChild(script);
-        // }, 1000);
       }
     </script>
     <script>
